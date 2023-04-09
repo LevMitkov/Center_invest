@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Успешная регистрация</title>
+</head>
+<body>
+    <h1>Заявление на поступление успешна сохранена!</h1>
+    <h3>Информация о заявлении:</h3>
+    <p>Номер заявления: {{ aplication.id }}</p>
+    <p>Фамилия: {{ aplication.last_name }}</p>
+    <p>Имя: {{ aplication.first_name }}</p>
+    <a href="test_for_{{ aplication.id }}">Пройдите тест</a>
+
+</body>
+</html>

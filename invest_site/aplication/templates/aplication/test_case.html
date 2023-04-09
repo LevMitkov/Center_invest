@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/test.css'%}">
+  <title>Инвест-ответ</title>
+</head>
+
+<body>
+  <header>
+    <div class="wrap-logo">
+<!--      onclick="javascript:history.back();return false;"-->
+      <a href="https://www.centrinvest.ru/">
+        <img src="https://www.centrinvest.ru/_nuxt/af8c0f318044d62cec6cadadabb9a79d.svg" alt="">
+      </a>
+    </div>
+
+    <nav>
+      <a title="+7(800)200-99-29" href="tel:+7(800)200 99 29"><strong>8 800 200 99 29</strong></a>
+      <a title="info@fastreport.ru" href="mailto:welcome@centrinvest.ru"><strong>welcome@centrinvest.ru</strong></a>
+
+    </nav>
+
+  </header>
+
+  <div class="quiz-container" id="quiz">
+    <div class="quiz-header">
+      <h2 id="question"></h2>
+      <ul>
+        <li>
+          <input type="radio" name="answer" id="a" class="answer">
+          <label for="a" id="a_text">Ответ</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="b" class="answer">
+          <label for="b" id="b_text">Ответ</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="c" class="answer">
+          <label for="c" id="c_text">Ответ</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="d" class="answer">
+          <label for="d" id="d_text">Ответ</label>
+        </li>
+
+      </ul>
+    </div>
+<!--    <form method="post">-->
+<!--       {% csrf_token %}-->
+          <button id="submit">Подтвердить</button>
+<!--    </form>-->
+
+  </div>
+
+  <div class="questhion answer">
+    <img src="">
+  </div>
+  <script src="{% static 'js/test.js' %}"></script>
+
+</body>
+
+</html>

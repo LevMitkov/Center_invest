@@ -1,0 +1,83 @@
+{% block content %}
+
+        {% load static %}
+<!--            <img src="{% static 'img/1.png' %}">-->
+            <link rel="stylesheet" type="text/css" href="{% static 'css/style1.css' %}">
+            <link href="{% static 'https://fonts.googleapis.com/css?family=Nunito:400,300'  rel='stylesheet' type='text/css' %}">
+
+          <form method="post">
+            {% csrf_token %}
+              <body>
+              <h1>Форма заявки</h1>
+
+              <div>
+                  Фамилия: {{form.last_name}}<br>
+                  Имя: {{form.first_name}}<br>
+                  Отчество: {{form.parent_name}}<br>
+                  День рождения: {{form.date_of_birth}}<br>
+                  Семейное положение: {{form.marital_status}}<br>
+                  Дети: {{form.children}}<br>
+                  Адресс регистрации: {{form.registration_address}}<br>
+                  Фактический адрес: {{form.residential_address}}<br>
+              </div>
+              <br>
+              <div>
+                  <legend><span class="number">2</span> Контактные данные</legend>
+                  Мобильный телефон {{form.mobile_phone}}<br>
+                  Домашний телефон {{form.home_phone}}<br>
+                  Электронная почта {{form.email_address}}<br>
+              </div>
+              <div>
+                  <legend><span class="number">3</span> Предмет обращения</legend>
+                  {{ direction.as_p }}
+              </div>
+              <div>
+                  <p></p>
+                  <legend><span class="number">4</span> Образование и умения</legend>
+                  {{ higher_education.as_p }}
+              </div>
+              <div>
+                  Дополнительные сведения об образовании
+                  Средний балл успеваемости {{form.average_perfomance}}<br>
+                  Ученые степени, звания{{form.academic_degrees}}<br>
+                  Курсы повышения квалификации {{form.training_courses}}<br>
+                  Профессиональные навыки {{form.professional_skills}}<br>
+                  Укажите программное обеспечение, которым владеете {{form.software}}<br>
+              </div>
+              <br><br>
+              <div>
+                  Иностранный язык
+                  {{ foreign.as_p }}
+              </div>
+              <hr>
+              <div>
+                  <legend><span class="number">5</span> Трудовая деятельность</legend>
+                  <p></p>
+                  Трудовая деятельность
+                  (укажите в обратном хронологическом порядке)
+                  {{ enterpises.as_p }}
+              </div>
+              <div>
+                  Если Вас может кто-то рекомендовать, укажите контактные данные этого лица<br><br>
+                  Фио{{form.FIO}}<br>
+                  Место работы{{form.work_place}}<br>
+                  Должность{{form.position_of_recom}}<br>
+                  Номер телефона{{form.phone_of_recom}}<br>
+              </div>
+              <div>
+
+                  {{family_related.as_p}}
+              </div>
+              <div>
+                  Дополнительная инфа
+                  {{form.comm}}
+              </div>
+                 <button type="submit" class="button">Submit</button>
+<!--                      <a href="{% static '/html-forms/html-forms/2/index1.html' %}" class="button" type="submit">Отправить</a>-->
+<!--                        </div>-->
+                    </div>
+              </body>
+          </form>
+    {% endblock %}
+
+

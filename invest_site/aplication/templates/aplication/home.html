@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel='stylesheet' href='eleganttips.min.css'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/gw19/Eleganttips.css@1.2.1/eleganttips.min.css'>
+    <title>Карьера в "Центр-Инвест"</title>
+    
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+      <section class="showcase">
+        <div class="video-container" id="vid">
+         <video src="{% static '/video/Банк Центр-инвест отмечает двухлетие Принципов ответственного банкинга ООН.mp4'%}" autoplay muted loop></video>
+        </div>
+        <div class="content" id="uptext">
+          <h1>Будущее в "Центр-Инвест"</h1>
+          <h3>Пройди у нас практику и попади на стажировку</h3>
+          <a href="/html-forms/html-forms/1/index.html" class="btn">Подробнее</a>
+        </div>
+      </section>
+      <section>
+      <div class="wrapper">
+        <input type="radio" name="point" id="slide1" checked>
+        <input type="radio" name="point" id="slide2">
+        <input type="radio" name="point" id="slide3">
+        <input type="radio" name="point" id="slide4">
+        <input type="radio" name="point" id="slide5">
+        <div class="slider">
+            <div class="slides slide1"></div>
+            <div class="slides slide2"></div>
+            <div class="slides slide3"></div>
+            <div class="slides slide4"></div>
+            <div class="slides slide5"></div>
+        </div>	
+        <div class="controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+            <label for="slide5"></label>
+        </div>
+        
+    </div>
+  </section>
+  </div>
+  
+ <!-- partial:index.partial.html -->
+ <div id="vaka">
+</div>
+
+
+<section class="main">
+
+  <div class="wrap wrap--1">
+    <a href="Тест с приколами/54. Quiz App/index.html">
+    <div class="container container--1">
+      <p>02. Вакансия</p>
+    </div>
+  </a>
+  </div>
+
+  <div class='header-example-text et'>.
+    <span class='et-top et-arrow et-style-night'>
+      <span style='color: orange; font: 18px bold;'>Бро, посмотри</span><br><br>
+      Приходи за кредитом!
+      <span style='color: whitesmoke; font: 18px bold;'>
+        &lt;<a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley' target='_blank'></a>&gt;
+      </span>
+      <br><br>
+      <span><img
+          src='{% static "img/gorizond.jpg" %}'
+          width='100%' /></span>
+    </span>
+  </div>
+
+  <div class="wrap wrap--2">
+    <a href="Меню с объектами/Меню с объектами/index.html">
+    <div class="container container--2">
+      <p>01. Вакансия</p>
+    </div>
+  </a>
+  </div>
+
+  <div class='header-example-text et'>.
+    <span class='et-top et-arrow et-style-night'>
+      <span style='color: orange; font: 18px bold;'>Бро, посмотри</span><br><br>
+      Оформление и обслуживание банковских карт!
+      <span style='color: whitesmoke; font: 18px bold;'>
+        &lt;<a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley' target='_blank'></a>&gt;
+      </span>
+      <br><br>
+      <span><img
+          src='{% static "img/chel.jpg"%}'
+          width='100%' /></span>
+    </span>
+  </div>
+
+  <div class="wrap wrap--3">
+    <div class="container container--3">
+      <p>03. Вакансия</p>
+    </div>
+  </div>
+
+  <div class='header-example-text et'>.
+    <span class='et-top et-arrow et-style-night'>
+      <span style='color: orange; font: 18px bold;'>Бро, посмотри</span><br><br>
+      Выгодный обмен валют!
+      <span style='color: whitesmoke; font: 18px bold;'>
+        &lt;<a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley' target='_blank'></a>&gt;
+      </span>
+      <br><br>
+      <span><img
+          src='https://irs2.4sqi.net/img/general/720x960/50169656__LiNuPvm8I0eGLwO7cmz1ZMjwXjLZQ2SJvVdsZ0eEWE.jpg'
+          width='100%' /></span>
+    </span>
+  </div>
+
+</section>
+      
+    </section>
+  </main>
+    <footer>
+      <div id="fot" widht="230">
+        </div>
+    </footer>
+</article>
+<script type="text/javascript">
+  "use strict";
+
+
+  /* Индекс слайда по умолчанию */
+  var slideIndex = 1;
+  var timer = null;
+  showSlides(slideIndex);
+
+  afterTime(20); // Устанавливаем считчик...
+  /* Функция увеличивает индекс на 1, показывает следующй слайд*/
+  function plusSlide() {
+      showSlides(slideIndex += 1);
+  }
+
+  /* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
+  function minusSlide() {
+      showSlides(slideIndex -= 1);
+  }
+
+  /* Устанавливает текущий слайд */
+  function currentSlide(n) {
+      console.log(n);
+      showSlides(slideIndex = n);
+  }
+
+  /* Основная функция сладера */
+  function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("slider");
+      var dots = document.getElementsByClassName("controls");
+
+      if (n && n > slides.length) {
+          slideIndex = 1;
+      }
+      if (n && n < 1) {
+          slideIndex = slides.length;
+      }
+
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].classList.remove("active");
+          // dots[i].className = dots[i].className.replace("active", "");
+      }
+      if (slideIndex > slides.length) {
+          slideIndex = 1;
+      }
+
+      if (slideIndex <= 0) slideIndex = slides.length; // проверяем на кнопке back
+
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].classList.add("active");
+      // dots[slideIndex - 1].className += " active";
+
+      afterTime(20); // Сбрасываем и устанавливаем счетчик...
+  }
+
+  function afterTime(delay) { // Сам счетчик..
+      clearInterval(timer);
+      timer = setInterval(() => {
+          slideIndex++;
+          showSlides();
+      }, delay);
+  }
+
+</script>
+  </div>
+  <script src="{% static 'js/scripts.js'%}" type="text/babel"></script>
+  <script src="{% static 'js/React.js' %}" type="text/babel"></script>
+</body>
+</html>

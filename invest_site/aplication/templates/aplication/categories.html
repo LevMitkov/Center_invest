@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Направления</title>
+</head>
+<body>
+    <table>
+        {% for category in all_category %}
+        <tr>
+            <td>
+            <a href="{{category.pk}}">{{ category.title }}</a><br>
+            {{ category.description }}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>
